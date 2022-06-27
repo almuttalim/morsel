@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+p {
+  color: #fff !important;
+}
+input {
+  color: #333 !important;
+}
+
+/* CUSTOM CONTAINER */
+.customContainer {
+  width: 100vw;
+  height: min-content;
+  background-image: url("./background/bg.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.customhehe {
+  color: #fff !important;
+}
+.customTransition {
+  transition: all 0.2s ease-in-out 5s !important;
+}
+
+.container--orderConf {
+  padding-bottom: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* order first child  */
+.container--orderConf div:nth-child(1) {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.container--orderConf div:nth-child(1) h1 {
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.container--orderConf div:nth-child(1) p {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.container--orderConf div:nth-child(1) a {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #000;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.container--orderConf div:nth-child(1) a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/********/
+
+.container--orderConf div:nth-child(2) {
+  padding-bottom: 4rem;
+}
+
+.container--orderConf div:nth-child(2) h3 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.container--orderConf div:nth-child(2) p {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.container--orderConf div:nth-child(3) {
+  padding-bottom: 1rem;
+}
+
+/******************************/
+.orderContainer {
+  color: #fff;
+}
+
+.orderForm {
+  display: flex;
+  flex-direction: column;
+}
+.orderFormBtn {
+  align-self: center;
+  background-color: #fff !important;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.2 ease;
+}
+.orderFormBtn:hover {
+  background-color: #000 !important;
+  color: #fff;
+}
+
+/* TEXTS */
+.orderContainer p,
+.orderContainer label {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.customParagraph {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+.containerHeading {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+::placeholder {
+  opacity: 1;
+  color: #fff !important;
+}
+
+/*  */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+}
+
+.customHeader {
+  background-color: #0e0e0e;
+  font-family: "Pacifico", cursive;
+}
+
+.customNavElements {
+  font-family: "Pacifico", cursive;
+}
+
+/* CARDS */
+.customCard {
+  opacity: 0.8;
+  background-color: rgb(26, 25, 25);
+  color: #fff;
+  border-radius: 20px;
+  height: 16rem;
+  width: 20rem;
+  margin-top: 2rem;
+  border: 4px solid #fff;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12rem;
+}
+
+.menuCard {
+  color: #fff;
+}
+
+.menuCard h5 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.menuCard p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* ******************* */
+.btnCustom,
+.btnCustom:visited {
+  width: 11rem;
+  border: 1px solid #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  font-family: "Pacifico", cursive;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.btnCustom:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: rgb(201, 201, 201);
+}
+
+.homeText {
+  color: black;
+  font-family: "Pacifico", cursive;
+  font-size: 6rem;
+  -webkit-text-stroke: 3px #ffffff;
+}
+
+/*  */
+
+@media only screen and (max-width: 900px) {
+  /* .customContainer{
+    height: min-content;
+} */
+}
+
+.customformcontrol {
+  color: #ffffff;
+}

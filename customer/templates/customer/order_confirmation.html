@@ -1,0 +1,38 @@
+{% extends 'customer/base.html' %}
+{% block title %}Order Confirmed!{% endblock %}
+{% block content %}
+<div id="orderConf" class="container--orderConf container mb-5">
+  <div class="col-md-5 col-sm-12 text-center">
+    <h1>Order Placed!</h1>
+    <p>You should receive a confirmation email soon.</p>
+    <a class="btnCustom orderConfo--btn" href="{% url 'index' %}">Homepage</a>
+  </div>
+
+  <div class="col-md-5 col-sm-12 text-center">
+    <h3>Order Summary:</h3>
+    {% for item in items.all %}
+    <p>{{ item.name }} <span class="pl-3">{{ item.price }}</span></p>
+    {% endfor %}
+
+    <p>Total: {{ price }}</p>
+  </div>
+
+  <div class="col-md-6 text-center">
+    <h3>Pay Now or Pay in Cash Upon Delivery</h3>
+  </div>
+
+  <!-- <div class="row justify-content-center pb-10">
+        <div class="col-md-6 text-center">
+            <script>paypal.Buttons().render('body')</script>
+        </div>
+    </div> -->
+</div>
+
+<div class="customTransition">
+<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+<script>
+  paypal.Buttons().render("#orderConf");
+</script>
+</div>
+
+{% endblock content %}
